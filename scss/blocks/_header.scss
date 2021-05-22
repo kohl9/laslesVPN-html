@@ -1,0 +1,60 @@
+header {
+    @include regular;
+    padding: 50px 0 0 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        color: $primary-color;
+
+        &_txt {
+            @include medium;
+            font-size: 20px;
+            margin: 0 0 0 10px;
+            display: inline-block;
+
+            &-bold {
+                @include bold;
+            }
+        }
+    }
+
+    &__navbar {
+        width: 450px;
+        display: flex;
+        justify-content: space-between;
+        
+        a {
+            color: $secondary-color;
+        }
+    }
+
+    &__login {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 235px;
+
+        a {
+            @include medium;
+        }
+
+        .sign-in {
+            color: $primary-color;
+        }
+
+        .sign-up {
+            display: inline-block;
+            border: 1px solid $danger-color;
+            border-radius: 50px;
+            padding: 13px 45px;
+            color: $danger-color;
+        }
+    }
+}
