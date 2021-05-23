@@ -350,6 +350,7 @@ a {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px 0 20px;
 }
 
 header {
@@ -358,6 +359,7 @@ header {
 }
 
 .header {
+  margin: 0 0 90px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -387,7 +389,7 @@ header {
   display: inline-block;
 }
 
-.header__logo_txt-bold {
+.header__logo_txt_bold {
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
 }
@@ -434,4 +436,72 @@ header {
   border-radius: 50px;
   padding: 13px 45px;
   color: #F53838;
+}
+
+@media (max-width: 992px) {
+  .header__navbar {
+    display: none;
+  }
+}
+
+@media (max-width: 518px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .header__logo {
+    margin-bottom: 20px;
+  }
+}
+
+.start {
+  font-family: 'Rubik', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.start__description h2 {
+  color: #0B132A;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  margin: 28px 0 20px 0;
+}
+
+.start__description_txt_bold {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+}
+
+.start__description p {
+  color: #4F5665;
+}
+
+.start__description a {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  background-color: #F53838;
+  padding: 17px 78px;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 50px 0 0 0;
+}
+
+@media (max-width: 1082px) {
+  .start {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .start a {
+    margin-bottom: 20px;
+  }
+  .start__description_img object {
+    width: 100%;
+    max-height: 383px;
+  }
 }

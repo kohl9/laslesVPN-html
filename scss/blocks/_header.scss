@@ -4,6 +4,7 @@ header {
 }
 
 .header {
+    margin: 0 0 90px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,7 +20,7 @@ header {
             margin: 0 0 0 10px;
             display: inline-block;
 
-            &-bold {
+            &_bold {
                 @include bold;
             }
         }
@@ -55,6 +56,21 @@ header {
             border-radius: 50px;
             padding: 13px 45px;
             color: $danger-color;
+        }
+    }
+
+    @media (max-width: 992px) {
+        &__navbar {
+            display: none;
+        }
+    }
+
+    @media (max-width: 518px) {
+        flex-direction: column;
+        margin-bottom: 30px;
+
+        &__logo {
+            margin-bottom: 20px;
         }
     }
 }

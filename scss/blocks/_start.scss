@@ -1,0 +1,47 @@
+.start {
+    @include regular;
+    display: flex;
+
+    &__description {
+        h2 {
+            color: $primary-color;
+            @include medium;
+            font-size: 50px;
+            margin: 28px 0 20px 0;
+        }
+
+        &_txt_bold {
+            @include bold;
+        }
+
+        p {
+            color: $secondary-color;
+            
+        }
+
+        a {
+            @include bold;
+            color: #fff;
+            background-color: $danger-color;
+            padding: 17px 78px;
+            border-radius: 10px;
+            display: inline-block;
+            margin: 50px 0 0 0;
+        }
+    }
+
+    @media (max-width: 1082px) {
+        flex-wrap: wrap;
+
+        a {
+            margin-bottom: 20px;
+        }
+
+        &__description_img {
+            object {
+                width: 100%;
+                max-height: 383px;
+            }
+        }
+    }
+}
