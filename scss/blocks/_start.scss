@@ -1,6 +1,7 @@
 .start {
     @include regular;
     display: flex;
+    margin-bottom: 100px;
 
     &__description {
         h2 {
@@ -32,6 +33,7 @@
 
     @media (max-width: 1082px) {
         flex-wrap: wrap;
+        margin-bottom: 20px;
 
         a {
             margin-bottom: 20px;
